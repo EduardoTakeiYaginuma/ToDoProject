@@ -54,4 +54,4 @@ jobs:
         script: |
           docker stop toDo
           docker rm --force toDo
-          docker run -d -p 8080:8080 --network=rede_ --name toDo eduyaginuma/toDo:${{ github.sha }}
+          docker run -d -p 8080:8080 --network=todo --name toDo eduyaginuma/toDo:${{ github.sha }}
